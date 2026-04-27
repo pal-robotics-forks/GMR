@@ -70,19 +70,32 @@ if __name__ == "__main__":
         default=30,
         type=int,
     )
-    
+
+    parser.add_argument(
+        "--start_frame",
+        default=0,
+        type=int,
+        help="First frame to process (inclusive).",
+    )
+
+    parser.add_argument(
+        "--end_frame",
+        default=1000,
+        type=int,
+        help="Last frame to process (exclusive).",
+    )
+
     args = parser.parse_args()
-    
+
     if args.save_path is not None:
         save_dir = os.path.dirname(args.save_path)
         if save_dir:  # Only create directory if it's not empty
             os.makedirs(save_dir, exist_ok=True)
         qpos_list = []
 
-    
     # Load SMPLX trajectory
     lafan1_data_frames, actual_human_height = load_bvh_file(args.bvh_file, format=args.format)
-    
+    lafan1_data_frames = lafan1_data_frames[args.start_frame:args.end_frame]
     
     # Initialize the retargeting system
     retargeter = GMR(
