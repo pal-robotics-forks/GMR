@@ -44,6 +44,20 @@ if __name__ == "__main__":
     )
     
     parser.add_argument(
+        "--start_frame",
+        default=0,
+        type=int,
+        help="Start frame index (default: 0).",
+    )
+
+    parser.add_argument(
+        "--end_frame",
+        default=1000,
+        type=int,
+        help="End frame index (default: 1000).",
+    )
+
+    parser.add_argument(
         "--loop",
         default=False,
         action="store_true",
@@ -78,6 +92,7 @@ if __name__ == "__main__":
     # align fps
     tgt_fps = 30
     smplx_data_frames, aligned_fps = get_smplx_data_offline_fast(smplx_data, body_model, smplx_output, tgt_fps=tgt_fps)
+    smplx_data_frames = smplx_data_frames[args.start_frame:args.end_frame]
     
    
     # Initialize the retargeting system
