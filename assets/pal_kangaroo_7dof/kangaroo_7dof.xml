@@ -110,7 +110,7 @@
                   <body name="arm_left_5_link" pos="-0.17011 0.02 -0.03711" quat="0.707105 0 -0.707108 0">
                     <inertial pos="0.0266059 -9.73534e-06 0.0673257" quat="0.989898 -7.96043e-05 0.141782 -0.000384017" mass="0.348015" 
                       diaginertia="0.0015535 0.0014601 0.000311872"/>
-                    <joint name="arm_left_5_joint" axis="0 0 -1" range="-3.66519 1.5708"/>
+                    <joint name="arm_left_5_joint" axis="0 0 1" range="-3.66519 1.5708"/>
                     <geom class="visual" material="light_gray" mesh="arm_5_link"/>
                     <body name="arm_left_6_link" pos="0.0422 0 0.1654" quat="0.707105 0 0.707108 0">
                       <inertial pos="-0.00626817 -0.0318124 -0.0405314" quat="0.663771 0.673523 -0.178424 -0.27192" mass="1.39009" 
@@ -120,7 +120,7 @@
                       <body name="arm_left_7_link" pos="-0.0534 -0.07 -0.0422" quat="0.707105 0 -0.707108 0">
                         <inertial pos="0.000145329 0.000246068 0.0490178" quat="0.99991 0.00738555 -0.00687251 0.00884821" mass="0.762485" 
                           diaginertia="0.00104577 0.00101366 0.000480656"/>
-                        <joint name="arm_left_7_joint" axis="0 0 -1" range="-2.61799 2.61799"/>
+                        <joint name="arm_left_7_joint" axis="0 0 1" range="-2.61799 2.61799"/>
                         <geom class="visual" material="light_gray" mesh="arm_7_link"/>
                         <body name="arm_left_tip_link" pos="0.0 0.0 0.0" quat="0.924 0.0 0.0 0.383"/>
                       </body>
@@ -155,7 +155,7 @@
                   <body name="arm_right_5_link" pos="-0.17011 0.02 -0.03711" quat="0.707105 0 -0.707108 0">
                     <inertial pos="0.0266059 -9.73534e-06 0.0673257" quat="0.989898 -7.96043e-05 0.141782 -0.000384017" mass="0.348015" 
                       diaginertia="0.0015535 0.0014601 0.000311872"/>
-                    <joint name="arm_right_5_joint" axis="0 0 -1" range="-1.5708 3.66519"/>
+                    <joint name="arm_right_5_joint" axis="0 0 1" range="-1.5708 3.66519"/>
                     <geom class="visual" material="light_gray" mesh="arm_5_link"/>
                     <body name="arm_right_6_link" pos="0.0422 0 0.1654" quat="0.707105 0 0.707108 0">
                       <inertial pos="-0.00626817 -0.0318124 -0.0405314" quat="0.663771 0.673523 -0.178424 -0.27192" mass="1.39009" 
@@ -165,7 +165,7 @@
                       <body name="arm_right_7_link" pos="-0.0534 -0.07 -0.0422" quat="0.707105 0 -0.707108 0">
                         <inertial pos="0.000145329 0.000246068 0.0490178" quat="0.99991 0.00738555 -0.00687251 0.00884821" mass="0.762485" 
                           diaginertia="0.00104577 0.00101366 0.000480656"/>
-                        <joint name="arm_right_7_joint" axis="0 0 -1" range="-2.61799 2.61799"/>
+                        <joint name="arm_right_7_joint" axis="0 0 1" range="-2.61799 2.61799"/>
                         <geom class="visual" material="light_gray" mesh="arm_7_link"/>
                         <body name="arm_right_tip_link" pos="0.0 0.0 0.0" quat="0.924 0.0 0.0 -0.383"/>
                       </body>
